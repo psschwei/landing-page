@@ -72,6 +72,8 @@
       --color-dark-text-muted: #a8a8a8;
       --color-accent: #0f62fe;
       --color-accent-hover: #0353e9;
+      --color-code-bg: #ffffff;
+      --color-code-shadow: rgba(193, 199, 205, 0.45);
 
       /* Spacing */
       --spacing-xs: 0.5rem;
@@ -443,7 +445,7 @@
       justify-content: space-between;
       padding: 0.875rem 1rem;
       min-width: 12rem;
-      background: white;
+      background: var(--color-background);
       color: var(--color-text);
       font-size: 0.875rem;
       font-weight: 400;
@@ -454,7 +456,7 @@
     }
 
     .btn-primary:hover {
-      background: #f4f4f4;
+      background: var(--color-surface);
     }
 
     .btn-primary svg {
@@ -685,9 +687,9 @@
     /* Code snippet - desktop */
     .snippet-desktop {
       display: none;
-      background: white;
+      background: var(--color-code-bg);
       border-radius: 0.5rem;
-      box-shadow: 0 2px 8px rgba(193, 199, 205, 0.45);
+      box-shadow: 0 2px 8px var(--color-code-shadow);
       padding: var(--spacing-sm);
       overflow: auto;
       transition: opacity 0.2s;
@@ -706,9 +708,9 @@
     /* Code block styling */
     .code-block {
       position: relative;
-      background: white;
+      background: var(--color-code-bg);
       border-radius: 0.5rem;
-      box-shadow: 0 2px 8px rgba(193, 199, 205, 0.45);
+      box-shadow: 0 2px 8px var(--color-code-shadow);
       padding: var(--spacing-sm);
       padding-top: calc(var(--spacing-sm) + 1.5rem);
       overflow: auto;
@@ -774,7 +776,7 @@
     .code-block pre code.hljs {
       background: transparent;
       padding: 0;
-      color: #24292e;
+      color: var(--color-code-text, #24292e);
     }
 
     /* Ensure highlight.js token colors are applied */
@@ -827,6 +829,101 @@
 
     .footer-links a:hover {
       color: var(--color-text);
+    }
+
+    /* ==========================================================================
+       DARK MODE
+       ========================================================================== */
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --color-background: #161616;
+        --color-text: #f4f4f4;
+        --color-text-secondary: #c6c6c6;
+        --color-text-muted: #8d8d8d;
+        --color-border: #393939;
+        --color-surface: #262626;
+        --color-dark-bg: #0d0d0d;
+        --color-dark-text: #f4f4f4;
+        --color-dark-text-muted: #a8a8a8;
+        --color-accent: #78a9ff;
+        --color-accent-hover: #a6c8ff;
+        --color-code-bg: #1c1c1c;
+        --color-code-shadow: rgba(0, 0, 0, 0.4);
+        --color-code-text: #e1e4e8;
+      }
+
+      /* GitHub button inverts in dark mode */
+      .github-btn {
+        background: #f4f4f4;
+        color: #161616;
+      }
+
+      .github-btn:hover {
+        background: #c6c6c6;
+      }
+
+      .github-stars {
+        border-left-color: rgba(0, 0, 0, 0.3);
+      }
+
+      /* Comparison slider handle */
+      .comparison-handle::before {
+        background: #262626;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+      }
+
+      .comparison-handle svg {
+        color: #f4f4f4;
+      }
+
+      /* Copy snippet button */
+      .copy-snippet {
+        background: var(--color-surface);
+        color: var(--color-text);
+      }
+
+      .copy-snippet:hover {
+        background: var(--color-border);
+      }
+
+      .copy-snippet svg {
+        color: var(--color-text-secondary);
+      }
+
+      /* Code copy button */
+      .code-copy-btn {
+        background: #262626;
+        color: var(--color-text-secondary);
+      }
+
+      .code-copy-btn:hover {
+        background: #393939;
+        color: var(--color-text);
+      }
+
+      /* Showcase section */
+      .showcase {
+        background: var(--color-surface);
+      }
+
+      /* Syntax highlighting - dark theme */
+      .hljs-keyword { color: #ff7b72 !important; }
+      .hljs-string { color: #a5d6ff !important; }
+      .hljs-number { color: #79c0ff !important; }
+      .hljs-function { color: #d2a8ff !important; }
+      .hljs-title { color: #d2a8ff !important; }
+      .hljs-params { color: #e1e4e8 !important; }
+      .hljs-comment { color: #8b949e !important; }
+      .hljs-built_in { color: #79c0ff !important; }
+      .hljs-literal { color: #79c0ff !important; }
+      .hljs-type { color: #79c0ff !important; }
+      .hljs-attr { color: #79c0ff !important; }
+      .hljs-selector-tag { color: #7ee787 !important; }
+      .hljs-selector-class { color: #d2a8ff !important; }
+      .hljs-selector-id { color: #79c0ff !important; }
+      .hljs-variable { color: #ffa657 !important; }
+      .hljs-meta { color: #79c0ff !important; }
+      .hljs-decorator { color: #d2a8ff !important; }
     }
 
     /* ==========================================================================
