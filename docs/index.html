@@ -299,7 +299,6 @@
     @media (max-width: 671px) {
       .hero {
         padding: var(--spacing-2xl) 0;
-        margin-top: var(--spacing-xl);
       }
     }
 
@@ -577,7 +576,7 @@
       transition: background 0.15s;
       border: none;
       cursor: pointer;
-      border-radius: 0.5rem;
+      border-radius: 0;
     }
 
     .btn-primary:hover {
@@ -1402,6 +1401,16 @@
               </li>
             </ul>
 
+            <div style="margin-top: var(--spacing-xl);">
+              <a href="https://docs.mellea.ai/overview/quick-start" target="_blank" rel="noreferrer"
+                class="btn-primary">
+                Get started
+                <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M6 16h20M18 8l8 8-8 8" />
+                </svg>
+              </a>
+            </div>
+
           </div>
         </div>
       </div>
@@ -1415,6 +1424,7 @@
             <div class="showcase-grid">
 
               <div class="accordion" id="accordion">
+                <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: var(--spacing-md);">See it in action</h2>
 
                 <!-- Accordion Item 1: Generative Slots (Layer 1 — entry point) -->
                 <div class="accordion-item active" data-snippet="generative-slots">
