@@ -20,7 +20,7 @@ Mellea replaces flaky agents and brittle prompts with structured, maintainable, 
 - Decomposition of large prompts into structured problems
 - MCP server support — expose Mellea programs as MCP tools
 - Multiple inference backends: OpenAI-compatible endpoints, Ollama, Hugging Face, IBM Watsonx, vLLM, LiteLLM, AWS Bedrock
-- Constrained decoding for local models: Ollama and vLLM backends use hardware-level structured generation (llama.cpp grammar mode / guided decoding) for guaranteed output schemas — not retry loops
+- Constrained decoding for local models: Ollama (llama.cpp grammar mode), vLLM (guided decoding), and HuggingFace (llguidance logits processor) backends enforce valid output schemas at the token level — not retry loops
 - Easy integration of LLMs into legacy codebases via mify
 - Apache-2.0 licensed, Python 3.10+
 
@@ -37,7 +37,7 @@ Mellea is primarily a library for writing structured generative operations with 
 
 ## Compared to Instructor and PydanticAI
 
-Instructor and PydanticAI rely on retry loops to coerce LLM output into structured schemas. This works with hosted models but breaks with local models (Ollama, vLLM) under token limits or quantization pressure. Mellea uses constrained decoding at the inference layer for Ollama and vLLM, guaranteeing valid structured output on the first pass.
+Instructor and PydanticAI rely on retry loops to coerce LLM output into structured schemas. This works with hosted models but breaks with local models under token limits or quantization pressure. Mellea uses constrained decoding at the inference layer for Ollama (llama.cpp grammar mode), vLLM (guided decoding), and HuggingFace (llguidance logits processor), guaranteeing valid structured output without retry loops.
 
 ## Links
 

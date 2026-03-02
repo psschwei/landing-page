@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mellea - A Python Library for Generative Programs</title>
+  <title>Mellea — Structured, Validated LLM Output for Python | Ollama, vLLM, OpenAI</title>
   <meta name="description"
     content="Mellea is an open-source Python library for structured, validated LLM output. Works with Ollama, vLLM, and OpenAI — drop it inside LangGraph, AutoGen, or any Python system. A predictable alternative to LangChain output parsers.">
   <meta name="theme-color" content="#161616">
@@ -13,7 +13,7 @@
   <link rel="shortcut icon" href="mellea-logo.svg">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Mellea - A Python Library for Generative Programs">
+  <meta property="og:title" content="Mellea — Structured, Validated LLM Output for Python | Ollama, vLLM, OpenAI">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://mellea.ai/">
   <meta property="og:description"
@@ -28,7 +28,7 @@
 
   <!-- X/Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Mellea - A Python Library for Generative Programs">
+  <meta name="twitter:title" content="Mellea — Structured, Validated LLM Output for Python | Ollama, vLLM, OpenAI">
   <meta name="twitter:description"
     content="Mellea is an open-source Python library for structured, validated LLM output. Works with Ollama, vLLM, and OpenAI — drop it inside LangGraph, AutoGen, or any Python system. A predictable alternative to LangChain output parsers.">
   <meta name="twitter:image"
@@ -41,13 +41,13 @@
     "@context": "https://schema.org",
     "@type": "SoftwareSourceCode",
     "name": "Mellea",
-    "description": "An open-source Python library for writing generative programs. Replaces flaky agents and brittle prompts with structured, testable, and resilient AI workflows. Provides programming abstractions for LLM instruction, output validation against requirements, and automatic failure recovery.",
+    "description": "An open-source Python library for structured, validated LLM output. Adds type-annotated outputs, verifiable requirements, and constrained decoding to any Python system. Works with Ollama, vLLM, HuggingFace, OpenAI, Watsonx, LiteLLM, and Bedrock. Drop it inside LangGraph, AutoGen, or any Python codebase.",
     "codeRepository": "https://github.com/generative-computing/mellea",
     "programmingLanguage": "Python",
     "runtimePlatform": "Python 3.10+",
     "license": "https://spdx.org/licenses/Apache-2.0",
     "url": "https://mellea.ai/",
-    "keywords": ["generative-ai", "llm", "agents", "prompt-engineering", "structured-output", "python", "mcp", "inference-scaling", "generative-computing", "ollama", "vllm", "local-llm", "constrained-decoding", "langgraph", "langchain-alternative", "pydantic-llm-output"],
+    "keywords": ["generative-ai", "llm", "agents", "structured-output", "python", "mcp", "inference-scaling", "ollama", "vllm", "huggingface", "local-llm", "constrained-decoding", "structured-generation", "langgraph", "langchain-alternative", "instructor-alternative", "pydantic-ai-alternative"],
     "applicationCategory": "DeveloperApplication",
     "author": {
       "@type": "Organization",
@@ -1246,10 +1246,10 @@
                 <br>
                 <span>predictable AI, real Python</span>
               </h1>
-              <p class="hero-subtext">In every AI system — LangGraph, AutoGen, or your own Python — the unreliable
-                part is the LLM call itself. Silent failures, untestable outputs, no guarantees. Mellea gives those
-                calls programming abstractions that make generative AI predictable: type annotations, validated outputs,
-                testable behavior.</p>
+              <p class="hero-subtext">Inside every LangGraph pipeline, AutoGen workflow, or Ollama-powered script,
+                the unreliable part is the same: the LLM call itself. Silent failures, untestable outputs, no
+                guarantees. Mellea wraps those calls in Python you can read, test, and reason about: type-annotated
+                outputs, verifiable requirements, automatic retries.</p>
               <div class="hero-actions">
                 <button class="copy-snippet" onclick="copyToClipboard(this, 'uv pip install mellea')">
                   <span>uv pip install mellea</span> <span class="version-tag" id="pypi-version"></span>
@@ -1294,9 +1294,9 @@
             <div class="framework-intro">
               <div class="framework-headline">
                 <h2>How it works</h2>
-                <p>Replace flaky agents and brittle prompts with structured, testable Python. Mellea's programming model
-                  lets you instruct LLMs, validate their output against requirements, and recover from failures
-                  automatically.</p>
+                <p>Replace flaky agents and brittle prompts with structured, testable Python. Mellea lets you instruct
+                  LLMs, validate outputs against your requirements, and recover from failures automatically. Works
+                  across OpenAI, Ollama, vLLM, HuggingFace, Watsonx, LiteLLM, and Bedrock.</p>
                 <a href="https://docs.mellea.ai/overview/quick-start" target="_blank" rel="noreferrer"
                   class="btn-primary">
                   Get started
@@ -1367,8 +1367,8 @@
                 </svg>
                 <div class="feature-text">
                   <strong>Predictable and Resilient</strong>
-                  <span>Pluggable sampling strategies — rejection sampling, majority voting, budget forcing — swap with
-                    one parameter. Add reliability without rewriting your code.</span>
+                  <span>Pluggable sampling strategies — rejection sampling, majority voting, inference-time scaling.
+                    One parameter change. No rewrites.</span>
                 </div>
               </li>
               <li class="feature-item">
@@ -1382,9 +1382,8 @@
                 </svg>
                 <div class="feature-text">
                   <strong>MCP Compatible</strong>
-                  <span>Expose any Mellea program as an MCP tool. Mellea validates and repairs the output before
-                    returning it to the calling agent — requirements are checked, retries run, then the tool
-                    responds.</span>
+                  <span>Expose any Mellea program as an MCP tool. The calling agent gets validated output —
+                    requirements checked, retries run — not raw LLM responses.</span>
                 </div>
               </li>
               <li class="feature-item">
@@ -1397,8 +1396,8 @@
                 </svg>
                 <div class="feature-text">
                   <strong>Constrained Decoding</strong>
-                  <span>Grammar-constrained generation for Ollama, vLLM, and HuggingFace. Structurally valid output
-                    isn't hoped for — it's enforced at the token level.</span>
+                  <span>Grammar-constrained generation for Ollama, vLLM, and HuggingFace. Unlike Instructor and
+                    PydanticAI, valid output is enforced at the token level — not retried into existence.</span>
                 </div>
               </li>
             </ul>
@@ -1477,8 +1476,8 @@ post_response(msg)</code></pre>
                   </button>
                   <div class="accordion-content">
                     <p class="accordion-description">Add requirements to any LLM call. Mellea validates outputs and
-                      retries automatically — swap between rejection sampling, majority voting, or budget forcing with
-                      one parameter.</p>
+                      retries automatically — swap between rejection sampling, majority voting, and more with one
+                      parameter.</p>
                     <a href="https://docs.mellea.ai/overview/requirements" target="_blank" rel="noreferrer"
                       class="learn-more">
                       Learn more
