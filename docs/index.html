@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mellea - A Python Library for Generative Programs</title>
-  <meta name="description" content="Mellea is an open-source Python library for writing generative programs. Replace flaky agents and brittle prompts with structured, maintainable, and resilient AI workflows.">
+  <meta name="description"
+    content="Mellea is an open-source Python library for writing generative programs. Replace flaky agents and brittle prompts with structured, maintainable, and resilient AI workflows.">
   <meta name="theme-color" content="#161616">
   <link rel="canonical" href="https://mellea.ai/">
   <link rel="icon" href="mellea-logo.svg">
@@ -14,9 +16,11 @@
   <meta property="og:title" content="Mellea - A Python Library for Generative Programs">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://mellea.ai/">
-  <meta property="og:description" content="An open-source Python library for writing generative programs. Replace flaky agents and brittle prompts with structured, maintainable, and resilient AI workflows.">
+  <meta property="og:description"
+    content="An open-source Python library for writing generative programs. Replace flaky agents and brittle prompts with structured, maintainable, and resilient AI workflows.">
   <meta property="og:site_name" content="Mellea">
-  <meta property="og:image" content="https://raw.githubusercontent.com/generative-computing/docs/main/images/hero-dark.png">
+  <meta property="og:image"
+    content="https://raw.githubusercontent.com/generative-computing/docs/main/images/hero-dark.png">
   <meta property="og:image:width" content="2064">
   <meta property="og:image:height" content="1104">
   <meta property="og:image:alt" content="Mellea logo on dark green background">
@@ -25,8 +29,10 @@
   <!-- X/Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Mellea - A Python Library for Generative Programs">
-  <meta name="twitter:description" content="An open-source Python library for writing generative programs. Replace flaky agents and brittle prompts with structured, maintainable, and resilient AI workflows.">
-  <meta name="twitter:image" content="https://raw.githubusercontent.com/generative-computing/docs/main/images/hero-dark.png">
+  <meta name="twitter:description"
+    content="An open-source Python library for writing generative programs. Replace flaky agents and brittle prompts with structured, maintainable, and resilient AI workflows.">
+  <meta name="twitter:image"
+    content="https://raw.githubusercontent.com/generative-computing/docs/main/images/hero-dark.png">
   <meta name="twitter:image:alt" content="Mellea logo on dark green background">
 
   <!-- Structured Data -->
@@ -38,7 +44,7 @@
     "description": "An open-source Python library for writing generative programs. Replaces flaky agents and brittle prompts with structured, testable, and resilient AI workflows. Provides programming abstractions for LLM instruction, output validation against requirements, and automatic failure recovery.",
     "codeRepository": "https://github.com/generative-computing/mellea",
     "programmingLanguage": "Python",
-    "runtimePlatform": "Python 3.12+",
+    "runtimePlatform": "Python 3.10+",
     "license": "https://spdx.org/licenses/Apache-2.0",
     "url": "https://mellea.ai/",
     "keywords": ["generative-ai", "llm", "agents", "prompt-engineering", "structured-output", "python", "mcp", "inference-scaling", "generative-computing"],
@@ -57,7 +63,9 @@
   <!-- Google Fonts - IBM Plex Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans:wght@200;400;500;600&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans:wght@200;400;500;600&display=swap"
+    rel="stylesheet">
 
   <!-- Highlight.js for syntax highlighting -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css">
@@ -111,7 +119,9 @@
     /* ==========================================================================
        BASE STYLES
        ========================================================================== */
-    *, *::before, *::after {
+    *,
+    *::before,
+    *::after {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
@@ -261,9 +271,11 @@
       .nav {
         display: none;
       }
+
       .nav-toggle {
         display: block;
       }
+
       .nav.open {
         display: flex;
         flex-direction: column;
@@ -893,23 +905,73 @@
     }
 
     /* Ensure highlight.js token colors are applied */
-    .hljs-keyword { color: #d73a49 !important; }
-    .hljs-string { color: #032f62 !important; }
-    .hljs-number { color: #005cc5 !important; }
-    .hljs-function { color: #6f42c1 !important; }
-    .hljs-title { color: #6f42c1 !important; }
-    .hljs-params { color: #24292e !important; }
-    .hljs-comment { color: #6a737d !important; }
-    .hljs-built_in { color: #005cc5 !important; }
-    .hljs-literal { color: #005cc5 !important; }
-    .hljs-type { color: #005cc5 !important; }
-    .hljs-attr { color: #005cc5 !important; }
-    .hljs-selector-tag { color: #22863a !important; }
-    .hljs-selector-class { color: #6f42c1 !important; }
-    .hljs-selector-id { color: #005cc5 !important; }
-    .hljs-variable { color: #e36209 !important; }
-    .hljs-meta { color: #005cc5 !important; }
-    .hljs-decorator { color: #6f42c1 !important; }
+    .hljs-keyword {
+      color: #d73a49 !important;
+    }
+
+    .hljs-string {
+      color: #032f62 !important;
+    }
+
+    .hljs-number {
+      color: #005cc5 !important;
+    }
+
+    .hljs-function {
+      color: #6f42c1 !important;
+    }
+
+    .hljs-title {
+      color: #6f42c1 !important;
+    }
+
+    .hljs-params {
+      color: #24292e !important;
+    }
+
+    .hljs-comment {
+      color: #6a737d !important;
+    }
+
+    .hljs-built_in {
+      color: #005cc5 !important;
+    }
+
+    .hljs-literal {
+      color: #005cc5 !important;
+    }
+
+    .hljs-type {
+      color: #005cc5 !important;
+    }
+
+    .hljs-attr {
+      color: #005cc5 !important;
+    }
+
+    .hljs-selector-tag {
+      color: #22863a !important;
+    }
+
+    .hljs-selector-class {
+      color: #6f42c1 !important;
+    }
+
+    .hljs-selector-id {
+      color: #005cc5 !important;
+    }
+
+    .hljs-variable {
+      color: #e36209 !important;
+    }
+
+    .hljs-meta {
+      color: #005cc5 !important;
+    }
+
+    .hljs-decorator {
+      color: #6f42c1 !important;
+    }
 
     /* ==========================================================================
        FOOTER
@@ -1020,23 +1082,73 @@
       }
 
       /* Syntax highlighting - dark theme */
-      .hljs-keyword { color: #ff7b72 !important; }
-      .hljs-string { color: #a5d6ff !important; }
-      .hljs-number { color: #79c0ff !important; }
-      .hljs-function { color: #d2a8ff !important; }
-      .hljs-title { color: #d2a8ff !important; }
-      .hljs-params { color: #e1e4e8 !important; }
-      .hljs-comment { color: #8b949e !important; }
-      .hljs-built_in { color: #79c0ff !important; }
-      .hljs-literal { color: #79c0ff !important; }
-      .hljs-type { color: #79c0ff !important; }
-      .hljs-attr { color: #79c0ff !important; }
-      .hljs-selector-tag { color: #7ee787 !important; }
-      .hljs-selector-class { color: #d2a8ff !important; }
-      .hljs-selector-id { color: #79c0ff !important; }
-      .hljs-variable { color: #ffa657 !important; }
-      .hljs-meta { color: #79c0ff !important; }
-      .hljs-decorator { color: #d2a8ff !important; }
+      .hljs-keyword {
+        color: #ff7b72 !important;
+      }
+
+      .hljs-string {
+        color: #a5d6ff !important;
+      }
+
+      .hljs-number {
+        color: #79c0ff !important;
+      }
+
+      .hljs-function {
+        color: #d2a8ff !important;
+      }
+
+      .hljs-title {
+        color: #d2a8ff !important;
+      }
+
+      .hljs-params {
+        color: #e1e4e8 !important;
+      }
+
+      .hljs-comment {
+        color: #8b949e !important;
+      }
+
+      .hljs-built_in {
+        color: #79c0ff !important;
+      }
+
+      .hljs-literal {
+        color: #79c0ff !important;
+      }
+
+      .hljs-type {
+        color: #79c0ff !important;
+      }
+
+      .hljs-attr {
+        color: #79c0ff !important;
+      }
+
+      .hljs-selector-tag {
+        color: #7ee787 !important;
+      }
+
+      .hljs-selector-class {
+        color: #d2a8ff !important;
+      }
+
+      .hljs-selector-id {
+        color: #79c0ff !important;
+      }
+
+      .hljs-variable {
+        color: #ffa657 !important;
+      }
+
+      .hljs-meta {
+        color: #79c0ff !important;
+      }
+
+      .hljs-decorator {
+        color: #d2a8ff !important;
+      }
     }
 
     /* ==========================================================================
@@ -1055,215 +1167,261 @@
     }
   </style>
 </head>
+
 <body>
 
-<!-- Skip to content -->
-<a href="#main-content" class="sr-only" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;" onfocus="this.style.cssText='position:fixed;top:0;left:0;z-index:9999;padding:0.75rem 1.5rem;background:var(--color-accent);color:#fff;font-size:1rem;text-decoration:none;'" onblur="this.style.cssText='position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;'">Skip to main content</a>
+  <!-- Skip to content -->
+  <a href="#main-content" class="sr-only"
+    style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;"
+    onfocus="this.style.cssText='position:fixed;top:0;left:0;z-index:9999;padding:0.75rem 1.5rem;background:var(--color-accent);color:#fff;font-size:1rem;text-decoration:none;'"
+    onblur="this.style.cssText='position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;'">Skip to
+    main content</a>
 
-<!-- ==========================================================================
+  <!-- ==========================================================================
      HEADER
      ========================================================================== -->
-<header class="header">
-  <div class="container">
-    <div class="header-content">
-      <div class="header-left">
-        <a href="#" class="logo">Mellea</a>
-        <nav class="nav" id="main-nav">
-          <a href="https://generative-computing.github.io/blog/" target="_blank" rel="noreferrer">
-            Blog
-            <svg class="nav-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M10 6L22 6L22 18M21 7L6 22"/>
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <div class="header-left">
+          <a href="#" class="logo">Mellea</a>
+          <nav class="nav" id="main-nav">
+            <a href="https://generative-computing.github.io/blog/" target="_blank" rel="noreferrer">
+              Blog
+              <svg class="nav-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M10 6L22 6L22 18M21 7L6 22" />
+              </svg>
+            </a>
+            <a href="https://docs.mellea.ai" target="_blank" rel="noreferrer">
+              Docs
+              <svg class="nav-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M10 6L22 6L22 18M21 7L6 22" />
+              </svg>
+            </a>
+          </nav>
+          <button class="nav-toggle" aria-label="Toggle navigation menu"
+            onclick="document.getElementById('main-nav').classList.toggle('open')">
+            <svg width="20" height="20" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 8h24M4 16h24M4 24h24" />
             </svg>
-          </a>
-          <a href="https://docs.mellea.ai" target="_blank" rel="noreferrer">
-            Docs
-            <svg class="nav-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M10 6L22 6L22 18M21 7L6 22"/>
-            </svg>
-          </a>
-        </nav>
-        <button class="nav-toggle" aria-label="Toggle navigation menu" onclick="document.getElementById('main-nav').classList.toggle('open')">
-          <svg width="20" height="20" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M4 8h24M4 16h24M4 24h24"/>
-          </svg>
-        </button>
+          </button>
+        </div>
+        <ul class="social-links">
+          <li>
+            <a href="https://github.com/generative-computing/mellea" target="_blank" rel="noreferrer">
+              <span>GitHub</span>
+              <svg viewBox="0 0 32 32" fill="currentColor">
+                <path
+                  d="M16 2a14 14 0 0 0-4.43 27.28c.7.13 1-.3 1-.67v-2.38c-3.89.84-4.71-1.88-4.71-1.88a3.7 3.7 0 0 0-1.55-2.05c-1.27-.86.1-.85.1-.85a2.94 2.94 0 0 1 2.14 1.44a3 3 0 0 0 4.08 1.16a2.93 2.93 0 0 1 .88-1.87c-3.1-.36-6.37-1.56-6.37-6.92a5.4 5.4 0 0 1 1.44-3.76a5 5 0 0 1 .14-3.7s1.17-.38 3.85 1.43a13.3 13.3 0 0 1 7 0c2.67-1.81 3.84-1.43 3.84-1.43a5 5 0 0 1 .14 3.7a5.4 5.4 0 0 1 1.44 3.76c0 5.38-3.27 6.56-6.39 6.9a3.28 3.28 0 0 1 .94 2.54v3.77c0 .37.28.81 1 .67A14 14 0 0 0 16 2z" />
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
-      <ul class="social-links">
-        <li>
-          <a href="https://github.com/generative-computing/mellea" target="_blank" rel="noreferrer">
-            <span>GitHub</span>
-            <svg viewBox="0 0 32 32" fill="currentColor">
-              <path d="M16 2a14 14 0 0 0-4.43 27.28c.7.13 1-.3 1-.67v-2.38c-3.89.84-4.71-1.88-4.71-1.88a3.7 3.7 0 0 0-1.55-2.05c-1.27-.86.1-.85.1-.85a2.94 2.94 0 0 1 2.14 1.44a3 3 0 0 0 4.08 1.16a2.93 2.93 0 0 1 .88-1.87c-3.1-.36-6.37-1.56-6.37-6.92a5.4 5.4 0 0 1 1.44-3.76a5 5 0 0 1 .14-3.7s1.17-.38 3.85 1.43a13.3 13.3 0 0 1 7 0c2.67-1.81 3.84-1.43 3.84-1.43a5 5 0 0 1 .14 3.7a5.4 5.4 0 0 1 1.44 3.76c0 5.38-3.27 6.56-6.39 6.9a3.28 3.28 0 0 1 .94 2.54v3.77c0 .37.28.81 1 .67A14 14 0 0 0 16 2z"/>
-            </svg>
-          </a>
-        </li>
-      </ul>
     </div>
-  </div>
-</header>
+  </header>
 
-<!-- ==========================================================================
+  <!-- ==========================================================================
      MAIN CONTENT
      ========================================================================== -->
-<main id="main-content">
+  <main id="main-content">
 
-  <!-- Hero / Introduction Section -->
-  <section class="hero">
-    <div class="container">
-      <div class="grid">
-        <div class="content-area">
-          <div class="hero-content">
-            <h1>
-              <span class="app-name">Mellea</span>
-              <img src="mellea-logo.svg" alt="" class="hero-logo" aria-hidden="true">
-              <br>
-              <span>build reliable AI with Python</span>
-            </h1>
-            <p class="hero-subtext">LLM apps built on raw prompts break silently, resist testing, and can't be composed. Mellea gives you programming abstractions that make generative AI predictable.</p>
-            <div class="hero-actions">
-              <button class="copy-snippet" onclick="copyToClipboard(this, 'uv pip install mellea')">
-                <span>uv pip install mellea</span> <span class="version-tag" id="pypi-version"></span>
-                <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2">
-                  <rect x="10" y="10" width="14" height="14" rx="1"/>
-                  <path d="M22 10V8a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h2"/>
-                </svg>
-              </button>
-              <a href="https://github.com/generative-computing/mellea" target="_blank" rel="noreferrer" class="github-btn">
-                <svg viewBox="0 0 32 32" fill="currentColor">
-                  <path d="M16 2a14 14 0 0 0-4.43 27.28c.7.13 1-.3 1-.67v-2.38c-3.89.84-4.71-1.88-4.71-1.88a3.7 3.7 0 0 0-1.55-2.05c-1.27-.86.1-.85.1-.85a2.94 2.94 0 0 1 2.14 1.44a3 3 0 0 0 4.08 1.16a2.93 2.93 0 0 1 .88-1.87c-3.1-.36-6.37-1.56-6.37-6.92a5.4 5.4 0 0 1 1.44-3.76a5 5 0 0 1 .14-3.7s1.17-.38 3.85 1.43a13.3 13.3 0 0 1 7 0c2.67-1.81 3.84-1.43 3.84-1.43a5 5 0 0 1 .14 3.7a5.4 5.4 0 0 1 1.44 3.76c0 5.38-3.27 6.56-6.39 6.9a3.28 3.28 0 0 1 .94 2.54v3.77c0 .37.28.81 1 .67A14 14 0 0 0 16 2z"/>
-                </svg>
-                GitHub
-                <span class="github-stars" id="github-stars"></span>
-              </a>
-            </div>
-            <div class="project-pulse" id="project-pulse">
-              <span class="pulse-item" id="pulse-release"></span>
-              <span class="pulse-sep" id="pulse-sep-1">&middot;</span>
-              <span class="pulse-item" id="pulse-commit"></span>
-              <span class="pulse-sep" id="pulse-sep-2">&middot;</span>
-              <span class="pulse-item" id="pulse-contributors"></span>
-            </div>
-            <div style="display: flex; align-items: center; flex-wrap: wrap; gap: var(--spacing-sm);">
-              <div class="contributor-avatars" id="contributor-avatars"></div>
-              <div class="activity-sparkline" id="activity-sparkline"></div>
+    <!-- Hero / Introduction Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="grid">
+          <div class="content-area">
+            <div class="hero-content">
+              <h1>
+                <span class="app-name">Mellea</span>
+                <img src="mellea-logo.svg" alt="" class="hero-logo" aria-hidden="true">
+                <br>
+                <span>build reliable AI with Python</span>
+              </h1>
+              <p class="hero-subtext">LLM apps built on raw prompts break silently, resist testing, and can't be
+                composed. Mellea gives you programming abstractions that make generative AI predictable.</p>
+              <div class="hero-actions">
+                <button class="copy-snippet" onclick="copyToClipboard(this, 'uv pip install mellea')">
+                  <span>uv pip install mellea</span> <span class="version-tag" id="pypi-version"></span>
+                  <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="10" y="10" width="14" height="14" rx="1" />
+                    <path d="M22 10V8a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h2" />
+                  </svg>
+                </button>
+                <a href="https://github.com/generative-computing/mellea" target="_blank" rel="noreferrer"
+                  class="github-btn">
+                  <svg viewBox="0 0 32 32" fill="currentColor">
+                    <path
+                      d="M16 2a14 14 0 0 0-4.43 27.28c.7.13 1-.3 1-.67v-2.38c-3.89.84-4.71-1.88-4.71-1.88a3.7 3.7 0 0 0-1.55-2.05c-1.27-.86.1-.85.1-.85a2.94 2.94 0 0 1 2.14 1.44a3 3 0 0 0 4.08 1.16a2.93 2.93 0 0 1 .88-1.87c-3.1-.36-6.37-1.56-6.37-6.92a5.4 5.4 0 0 1 1.44-3.76a5 5 0 0 1 .14-3.7s1.17-.38 3.85 1.43a13.3 13.3 0 0 1 7 0c2.67-1.81 3.84-1.43 3.84-1.43a5 5 0 0 1 .14 3.7a5.4 5.4 0 0 1 1.44 3.76c0 5.38-3.27 6.56-6.39 6.9a3.28 3.28 0 0 1 .94 2.54v3.77c0 .37.28.81 1 .67A14 14 0 0 0 16 2z" />
+                  </svg>
+                  GitHub
+                  <span class="github-stars" id="github-stars"></span>
+                </a>
+              </div>
+              <div class="project-pulse" id="project-pulse">
+                <span class="pulse-item" id="pulse-release"></span>
+                <span class="pulse-sep" id="pulse-sep-1">&middot;</span>
+                <span class="pulse-item" id="pulse-commit"></span>
+                <span class="pulse-sep" id="pulse-sep-2">&middot;</span>
+                <span class="pulse-item" id="pulse-contributors"></span>
+              </div>
+              <div style="display: flex; align-items: center; flex-wrap: wrap; gap: var(--spacing-sm);">
+                <div class="contributor-avatars" id="contributor-avatars"></div>
+                <div class="activity-sparkline" id="activity-sparkline"></div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Framework Section -->
-  <section class="framework" id="framework">
-    <div class="container">
-      <div class="grid">
-        <div class="content-area">
+    <!-- Framework Section -->
+    <section class="framework" id="framework">
+      <div class="container">
+        <div class="grid">
+          <div class="content-area">
 
-          <div class="framework-intro">
-            <div class="framework-headline">
-              <h2>How it works</h2>
-              <p>Replace flaky agents and brittle prompts with structured, testable Python. Mellea's programming model lets you instruct LLMs, validate their output against requirements, and recover from failures automatically.</p>
-              <a href="https://docs.mellea.ai/overview/quick-start" target="_blank" rel="noreferrer" class="btn-primary">
-                Get started
-                <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M6 16h20M18 8l8 8-8 8"/>
-                </svg>
-              </a>
-            </div>
-
-            <div class="comparison-container">
-              <div class="comparison-slider" id="comparison-slider">
-                <img src="without-mellea.png" alt="Without Mellea" class="before-image">
-                <img src="with-mellea.png" alt="With Mellea" class="after-image">
-                <div class="comparison-handle" id="comparison-handle">
-                  <svg viewBox="0 0 32 32" fill="currentColor">
-                    <path d="M10 16l4-4v8l-4-4zM22 16l-4-4v8l4-4z"/>
+            <div class="framework-intro">
+              <div class="framework-headline">
+                <h2>How it works</h2>
+                <p>Replace flaky agents and brittle prompts with structured, testable Python. Mellea's programming model
+                  lets you instruct LLMs, validate their output against requirements, and recover from failures
+                  automatically.</p>
+                <a href="https://docs.mellea.ai/overview/quick-start" target="_blank" rel="noreferrer"
+                  class="btn-primary">
+                  Get started
+                  <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M6 16h20M18 8l8 8-8 8" />
                   </svg>
+                </a>
+              </div>
+
+              <div class="comparison-container">
+                <div class="comparison-slider" id="comparison-slider">
+                  <img src="without-mellea.png" alt="Without Mellea" class="before-image">
+                  <img src="with-mellea.png" alt="With Mellea" class="after-image">
+                  <div class="comparison-handle" id="comparison-handle">
+                    <svg viewBox="0 0 32 32" fill="currentColor">
+                      <path d="M10 16l4-4v8l-4-4zM22 16l-4-4v8l4-4z" />
+                    </svg>
+                  </div>
                 </div>
               </div>
             </div>
+
+            <ul class="features-grid">
+              <li class="feature-item">
+                <!-- Python Logo -->
+                <svg viewBox="0 0 32 32" fill="currentColor">
+                  <path
+                    d="M15.885 2.1c-7.1 0-6.651 3.07-6.651 3.07l.007 3.18h6.778v.955H6.31S2 8.88 2 16.07s3.765 6.93 3.765 6.93h2.25v-3.34s-.12-3.77 3.7-3.77h6.37s3.58.06 3.58-3.47V6.47s.545-4.37-5.78-4.37zm-3.54 2.54a1.19 1.19 0 1 1 0 2.38 1.19 1.19 0 0 1 0-2.38z" />
+                  <path
+                    d="M16.115 29.9c7.1 0 6.651-3.07 6.651-3.07l-.007-3.18h-6.778v-.955h9.71S30 23.12 30 15.93s-3.765-6.93-3.765-6.93h-2.25v3.34s.12 3.77-3.7 3.77h-6.37s-3.58-.06-3.58 3.47v5.95s-.545 4.37 5.78 4.37zm3.54-2.54a1.19 1.19 0 1 1 0-2.38 1.19 1.19 0 0 1 0 2.38z" />
+                </svg>
+                <div class="feature-text">
+                  <strong>Python not Prose</strong>
+                  <span>Define LLM behavior with typed functions and classes, not fragile prompt strings.</span>
+                </div>
+              </li>
+              <li class="feature-item">
+                <!-- Document Requirements Icon -->
+                <svg focusable="false" preserveAspectRatio="xMidYMid meet" fill="currentColor" width="16" height="16"
+                  viewBox="0 0 32 32" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-width="0"
+                    d="M28.5899 20.59L22 27.1798 19.41 24.5898 18 26 22 30 30 22 28.5899 20.59zM10 20H16V22H10zM10 16H18V18H10z">
+                  </path>
+                  <path stroke-width="0"
+                    d="m8,4h8v6c0,1.1001.8999,2,2,2h6v6h2v-8c0-.2998-.1001-.5-.3-.7002l-7-7c-.2-.1997-.3999-.2998-.7-.2998h-10c-1.1001,0-2,.8999-2,2v24c0,1.1001.8999,2,2,2h7v-2h-7V4Zm10,.3999l5.6001,5.6001h-5.6001v-5.6001Z">
+                  </path>
+                </svg>
+                <div class="feature-text">
+                  <strong>Requirements Driven</strong>
+                  <span>Attach verifiable requirements to every LLM call. Mellea checks outputs before your users see
+                    them.</span>
+                </div>
+              </li>
+              <li class="feature-item">
+                <!-- Toolkit/Toolbox Icon -->
+                <svg focusable="false" preserveAspectRatio="xMidYMid meet" fill="currentColor" width="16" height="16"
+                  viewBox="0 0 32 32" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.9141,24.5l4.257-4.2568-1.414-1.4141L7.5,23.0859l-.793-.7929a.9994.9994,0,0,0-1.414,0l-4,4a.9994.9994,0,0,0,0,1.414l3,3a.9995.9995,0,0,0,1.414,0l4-4a.9994.9994,0,0,0,0-1.414ZM5,28.5859,3.4141,27,6,24.4141,7.5859,26Z">
+                  </path>
+                  <path
+                    d="M24,30a6.0067,6.0067,0,0,1-6-6,5.84,5.84,0,0,1,.2109-1.5469l-8.664-8.6638A5.8483,5.8483,0,0,1,8,14,5.9757,5.9757,0,0,1,2.4228,5.8164l.5577-1.4219L6.293,7.707a1.0233,1.0233,0,0,0,1.4135,0,.999.999,0,0,0,0-1.4141L4.3936,2.979l1.4233-.5571A5.9772,5.9772,0,0,1,14,8a5.84,5.84,0,0,1-.2109,1.5469l8.664,8.6635A5.8548,5.8548,0,0,1,24,18a5.9755,5.9755,0,0,1,5.5771,8.1836L29.02,27.6055,25.707,24.293a1.0233,1.0233,0,0,0-1.4135,0,.999.999,0,0,0-.0005,1.4141L27.6055,29.02l-1.4219.5579A5.96,5.96,0,0,1,24,30ZM10.0625,11.4763,20.5234,21.9375l-.2392.6094A3.9754,3.9754,0,0,0,23.75,27.9922l-.8711-.8711a2.9992,2.9992,0,0,1,0-4.2424,3.0721,3.0721,0,0,1,4.2427.0005l.8706.8708a3.9759,3.9759,0,0,0-5.4458-3.4658l-.6094.2385-10.46-10.46.2392-.6094A3.9755,3.9755,0,0,0,8.2505,4.0078l.8706.8711a2.9992,2.9992,0,0,1,0,4.2424,3.0721,3.0721,0,0,1-4.2427-.0005L4.0078,8.25a3.975,3.975,0,0,0,5.4453,3.4656Z">
+                  </path>
+                  <path
+                    d="M29.1226,2.85a3.0716,3.0716,0,0,0-4.2422,0L17.4,10.33l1.4141,1.414,7.48-7.48a1.0244,1.0244,0,0,1,1.4141,0,1.002,1.002,0,0,1,0,1.4145l-7.48,7.48,1.414,1.4141,7.48-7.4795A3.0031,3.0031,0,0,0,29.1226,2.85Z">
+                  </path>
+                </svg>
+                <div class="feature-text">
+                  <strong>Predictable and Resilient</strong>
+                  <span>Built-in sampling strategies retry and repair bad generations automatically, so failures don't
+                    reach production.</span>
+                </div>
+              </li>
+              <li class="feature-item">
+                <!-- Connection/Flow Icon -->
+                <svg focusable="false" preserveAspectRatio="xMidYMid meet" fill="currentColor"
+                  style="transform:rotate(180deg)" width="16" height="16" viewBox="0 0 32 32" aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12,13h14.2l-2.6,2.6,1.4,1.4,5-5-5-5-1.4,1.4,2.6,2.6h-14.2s0,2,0,2ZM28,19h-13.2l2.6-2.6-1.4-1.4-5,5,5,5,1.4-1.4-2.6-2.6h13.2v-2ZM22,7v-3c0-1.1-.9-2-2-2H4c-1.1,0-2,.9-2,2v24c0,1.1.9,2,2,2h16c1.1,0,2-.9,2-2v-3h-2v3H4V4h16v3h2Z">
+                  </path>
+                </svg>
+                <div class="feature-text">
+                  <strong>MCP Compatible</strong>
+                  <span>Expose any Mellea program as an MCP tool. Works with OpenAI, Ollama, Hugging Face, Watsonx,
+                    vLLM, LiteLLM, and Bedrock.</span>
+                </div>
+              </li>
+            </ul>
+
           </div>
-
-          <ul class="features-grid">
-            <li class="feature-item">
-              <!-- Python Logo -->
-              <svg viewBox="0 0 32 32" fill="currentColor">
-                <path d="M15.885 2.1c-7.1 0-6.651 3.07-6.651 3.07l.007 3.18h6.778v.955H6.31S2 8.88 2 16.07s3.765 6.93 3.765 6.93h2.25v-3.34s-.12-3.77 3.7-3.77h6.37s3.58.06 3.58-3.47V6.47s.545-4.37-5.78-4.37zm-3.54 2.54a1.19 1.19 0 1 1 0 2.38 1.19 1.19 0 0 1 0-2.38z"/>
-                <path d="M16.115 29.9c7.1 0 6.651-3.07 6.651-3.07l-.007-3.18h-6.778v-.955h9.71S30 23.12 30 15.93s-3.765-6.93-3.765-6.93h-2.25v3.34s.12 3.77-3.7 3.77h-6.37s-3.58-.06-3.58 3.47v5.95s-.545 4.37 5.78 4.37zm3.54-2.54a1.19 1.19 0 1 1 0-2.38 1.19 1.19 0 0 1 0 2.38z"/>
-              </svg>
-              <div class="feature-text">
-                <strong>Python not Prose</strong>
-                <span>Define LLM behavior with typed functions and classes, not fragile prompt strings.</span>
-              </div>
-            </li>
-            <li class="feature-item">
-              <!-- Document Requirements Icon -->
-              <svg focusable="false" preserveAspectRatio="xMidYMid meet" fill="currentColor" width="16" height="16" viewBox="0 0 32 32" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path stroke-width="0" d="M28.5899 20.59L22 27.1798 19.41 24.5898 18 26 22 30 30 22 28.5899 20.59zM10 20H16V22H10zM10 16H18V18H10z"></path><path stroke-width="0" d="m8,4h8v6c0,1.1001.8999,2,2,2h6v6h2v-8c0-.2998-.1001-.5-.3-.7002l-7-7c-.2-.1997-.3999-.2998-.7-.2998h-10c-1.1001,0-2,.8999-2,2v24c0,1.1001.8999,2,2,2h7v-2h-7V4Zm10,.3999l5.6001,5.6001h-5.6001v-5.6001Z"></path></svg>
-              <div class="feature-text">
-                <strong>Requirements Driven</strong>
-                <span>Attach verifiable requirements to every LLM call. Mellea checks outputs before your users see them.</span>
-              </div>
-            </li>
-            <li class="feature-item">
-              <!-- Toolkit/Toolbox Icon -->
-              <svg focusable="false" preserveAspectRatio="xMidYMid meet" fill="currentColor" width="16" height="16" viewBox="0 0 32 32" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M8.9141,24.5l4.257-4.2568-1.414-1.4141L7.5,23.0859l-.793-.7929a.9994.9994,0,0,0-1.414,0l-4,4a.9994.9994,0,0,0,0,1.414l3,3a.9995.9995,0,0,0,1.414,0l4-4a.9994.9994,0,0,0,0-1.414ZM5,28.5859,3.4141,27,6,24.4141,7.5859,26Z"></path><path d="M24,30a6.0067,6.0067,0,0,1-6-6,5.84,5.84,0,0,1,.2109-1.5469l-8.664-8.6638A5.8483,5.8483,0,0,1,8,14,5.9757,5.9757,0,0,1,2.4228,5.8164l.5577-1.4219L6.293,7.707a1.0233,1.0233,0,0,0,1.4135,0,.999.999,0,0,0,0-1.4141L4.3936,2.979l1.4233-.5571A5.9772,5.9772,0,0,1,14,8a5.84,5.84,0,0,1-.2109,1.5469l8.664,8.6635A5.8548,5.8548,0,0,1,24,18a5.9755,5.9755,0,0,1,5.5771,8.1836L29.02,27.6055,25.707,24.293a1.0233,1.0233,0,0,0-1.4135,0,.999.999,0,0,0-.0005,1.4141L27.6055,29.02l-1.4219.5579A5.96,5.96,0,0,1,24,30ZM10.0625,11.4763,20.5234,21.9375l-.2392.6094A3.9754,3.9754,0,0,0,23.75,27.9922l-.8711-.8711a2.9992,2.9992,0,0,1,0-4.2424,3.0721,3.0721,0,0,1,4.2427.0005l.8706.8708a3.9759,3.9759,0,0,0-5.4458-3.4658l-.6094.2385-10.46-10.46.2392-.6094A3.9755,3.9755,0,0,0,8.2505,4.0078l.8706.8711a2.9992,2.9992,0,0,1,0,4.2424,3.0721,3.0721,0,0,1-4.2427-.0005L4.0078,8.25a3.975,3.975,0,0,0,5.4453,3.4656Z"></path><path d="M29.1226,2.85a3.0716,3.0716,0,0,0-4.2422,0L17.4,10.33l1.4141,1.414,7.48-7.48a1.0244,1.0244,0,0,1,1.4141,0,1.002,1.002,0,0,1,0,1.4145l-7.48,7.48,1.414,1.4141,7.48-7.4795A3.0031,3.0031,0,0,0,29.1226,2.85Z"></path></svg>
-              <div class="feature-text">
-                <strong>Predictable and Resilient</strong>
-                <span>Built-in sampling strategies retry and repair bad generations automatically, so failures don't reach production.</span>
-              </div>
-            </li>
-            <li class="feature-item">
-              <!-- Connection/Flow Icon -->
-              <svg focusable="false" preserveAspectRatio="xMidYMid meet" fill="currentColor" style="transform:rotate(180deg)" width="16" height="16" viewBox="0 0 32 32" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M12,13h14.2l-2.6,2.6,1.4,1.4,5-5-5-5-1.4,1.4,2.6,2.6h-14.2s0,2,0,2ZM28,19h-13.2l2.6-2.6-1.4-1.4-5,5,5,5,1.4-1.4-2.6-2.6h13.2v-2ZM22,7v-3c0-1.1-.9-2-2-2H4c-1.1,0-2,.9-2,2v24c0,1.1.9,2,2,2h16c1.1,0,2-.9,2-2v-3h-2v3H4V4h16v3h2Z"></path></svg>
-              <div class="feature-text">
-                <strong>MCP Compatible</strong>
-                <span>Expose any Mellea program as an MCP tool. Works with OpenAI, Ollama, Hugging Face, Watsonx, vLLM, LiteLLM, and Bedrock.</span>
-              </div>
-            </li>
-          </ul>
-
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Showcase / Code Examples Section -->
-  <section class="showcase" id="showcase">
-    <div class="container">
-      <div class="grid">
-        <div class="content-area">
-          <div class="showcase-grid">
+    <!-- Showcase / Code Examples Section -->
+    <section class="showcase" id="showcase">
+      <div class="container">
+        <div class="grid">
+          <div class="content-area">
+            <div class="showcase-grid">
 
-            <div class="accordion" id="accordion">
+              <div class="accordion" id="accordion">
 
-              <!-- Accordion Item 1 -->
-              <div class="accordion-item active" data-snippet="instruct-validate-repair">
-                <button class="accordion-header" type="button">
-                  Instruct, Validate, Repair
-                  <svg class="accordion-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M16 6v20M6 16h20"/>
-                  </svg>
-                </button>
-                <div class="accordion-content">
-                  <p class="accordion-description">Clean interfaces for Gen AI output validation and sampling strategies.</p>
-                  <a href="https://docs.mellea.ai/overview/requirements" target="_blank" rel="noreferrer" class="learn-more">
-                    Learn more
-                    <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2">
-                      <path d="M6 16h20M18 8l8 8-8 8"/>
+                <!-- Accordion Item 1 -->
+                <div class="accordion-item active" data-snippet="instruct-validate-repair">
+                  <button class="accordion-header" type="button">
+                    Instruct, Validate, Repair
+                    <svg class="accordion-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M16 6v20M6 16h20" />
                     </svg>
-                  </a>
-                  <div class="snippet-mobile">
-                    <div class="code-block">
-                      <button class="code-copy-btn" onclick="copyCodeBlock(this)" aria-label="Copy code">
-                        <svg class="icon-copy" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2">
-                          <rect x="10" y="10" width="14" height="14" rx="1"/>
-                          <path d="M22 10V8a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h2"/>
-                        </svg>
-                        <svg class="icon-check" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2">
-                          <path d="M8 16l6 6 10-12"/>
-                        </svg>
-                      </button>
-                      <pre><code class="language-python">import mellea
+                  </button>
+                  <div class="accordion-content">
+                    <p class="accordion-description">Clean interfaces for Gen AI output validation and sampling
+                      strategies.</p>
+                    <a href="https://docs.mellea.ai/overview/requirements" target="_blank" rel="noreferrer"
+                      class="learn-more">
+                      Learn more
+                      <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M6 16h20M18 8l8 8-8 8" />
+                      </svg>
+                    </a>
+                    <div class="snippet-mobile">
+                      <div class="code-block">
+                        <button class="code-copy-btn" onclick="copyCodeBlock(this)" aria-label="Copy code">
+                          <svg class="icon-copy" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="10" y="10" width="14" height="14" rx="1" />
+                            <path d="M22 10V8a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h2" />
+                          </svg>
+                          <svg class="icon-check" viewBox="0 0 32 32" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M8 16l6 6 10-12" />
+                          </svg>
+                        </button>
+                        <pre><code class="language-python">import mellea
 from mellea.stdlib.sampling import RejectionSamplingStrategy
 
 
@@ -1284,39 +1442,41 @@ def write_email_with_strategy(m: mellea.MelleaSession, name: str, notes: str) ->
     # If sampling fails, use the first generation
     print("Expect sub-par result.")
     return email_candidate.sample_generations[0].value</code></pre>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
 
-              <!-- Accordion Item 2 -->
-              <div class="accordion-item" data-snippet="generative-slots">
-                <button class="accordion-header" type="button">
-                  Generative Slots
-                  <svg class="accordion-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M16 6v20M6 16h20"/>
-                  </svg>
-                </button>
-                <div class="accordion-content">
-                  <p class="accordion-description">Build composable Gen AI using tried-and-true abstractions.</p>
-                  <a href="https://docs.mellea.ai/core-concept/generative-slots" target="_blank" rel="noreferrer" class="learn-more">
-                    Learn more
-                    <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2">
-                      <path d="M6 16h20M18 8l8 8-8 8"/>
+                <!-- Accordion Item 2 -->
+                <div class="accordion-item" data-snippet="generative-slots">
+                  <button class="accordion-header" type="button">
+                    Generative Slots
+                    <svg class="accordion-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M16 6v20M6 16h20" />
                     </svg>
-                  </a>
-                  <div class="snippet-mobile">
-                    <div class="code-block">
-                      <button class="code-copy-btn" onclick="copyCodeBlock(this)" aria-label="Copy code">
-                        <svg class="icon-copy" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2">
-                          <rect x="10" y="10" width="14" height="14" rx="1"/>
-                          <path d="M22 10V8a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h2"/>
-                        </svg>
-                        <svg class="icon-check" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2">
-                          <path d="M8 16l6 6 10-12"/>
-                        </svg>
-                      </button>
-                      <pre><code class="language-python">@mellea.generative
+                  </button>
+                  <div class="accordion-content">
+                    <p class="accordion-description">Build composable Gen AI using tried-and-true abstractions.</p>
+                    <a href="https://docs.mellea.ai/core-concept/generative-slots" target="_blank" rel="noreferrer"
+                      class="learn-more">
+                      Learn more
+                      <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M6 16h20M18 8l8 8-8 8" />
+                      </svg>
+                    </a>
+                    <div class="snippet-mobile">
+                      <div class="code-block">
+                        <button class="code-copy-btn" onclick="copyCodeBlock(this)" aria-label="Copy code">
+                          <svg class="icon-copy" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="10" y="10" width="14" height="14" rx="1" />
+                            <path d="M22 10V8a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h2" />
+                          </svg>
+                          <svg class="icon-check" viewBox="0 0 32 32" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M8 16l6 6 10-12" />
+                          </svg>
+                        </button>
+                        <pre><code class="language-python">@mellea.generative
 def classify_sentiment(text: str) -> Literal["positive", "negative"]:
   """Classify the sentiment of the input text as 'positive' or 'negative'."""
 
@@ -1331,39 +1491,41 @@ else:
     )
 
 post_response(msg)</code></pre>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
 
-              <!-- Accordion Item 3 -->
-              <div class="accordion-item" data-snippet="mobjects">
-                <button class="accordion-header" type="button">
-                  MObjects
-                  <svg class="accordion-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M16 6v20M6 16h20"/>
-                  </svg>
-                </button>
-                <div class="accordion-content">
-                  <p class="accordion-description">Seamlessly sprinkle GenAI into existing systems.</p>
-                  <a href="https://docs.mellea.ai/core-concept/mobjects" target="_blank" rel="noreferrer" class="learn-more">
-                    Learn more
-                    <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2">
-                      <path d="M6 16h20M18 8l8 8-8 8"/>
+                <!-- Accordion Item 3 -->
+                <div class="accordion-item" data-snippet="mobjects">
+                  <button class="accordion-header" type="button">
+                    MObjects
+                    <svg class="accordion-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M16 6v20M6 16h20" />
                     </svg>
-                  </a>
-                  <div class="snippet-mobile">
-                    <div class="code-block">
-                      <button class="code-copy-btn" onclick="copyCodeBlock(this)" aria-label="Copy code">
-                        <svg class="icon-copy" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2">
-                          <rect x="10" y="10" width="14" height="14" rx="1"/>
-                          <path d="M22 10V8a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h2"/>
-                        </svg>
-                        <svg class="icon-check" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2">
-                          <path d="M8 16l6 6 10-12"/>
-                        </svg>
-                      </button>
-                      <pre><code class="language-python">import mellea
+                  </button>
+                  <div class="accordion-content">
+                    <p class="accordion-description">Seamlessly sprinkle GenAI into existing systems.</p>
+                    <a href="https://docs.mellea.ai/core-concept/mobjects" target="_blank" rel="noreferrer"
+                      class="learn-more">
+                      Learn more
+                      <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M6 16h20M18 8l8 8-8 8" />
+                      </svg>
+                    </a>
+                    <div class="snippet-mobile">
+                      <div class="code-block">
+                        <button class="code-copy-btn" onclick="copyCodeBlock(this)" aria-label="Copy code">
+                          <svg class="icon-copy" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="10" y="10" width="14" height="14" rx="1" />
+                            <path d="M22 10V8a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h2" />
+                          </svg>
+                          <svg class="icon-check" viewBox="0 0 32 32" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M8 16l6 6 10-12" />
+                          </svg>
+                        </button>
+                        <pre><code class="language-python">import mellea
 from mellea.stdlib.mify import mify, MifiedProtocol
 import pandas
 from io import StringIO
@@ -1392,26 +1554,26 @@ db = MyCompanyDatabase()
 assert isinstance(db, MifiedProtocol)
 answer = m.query(db, "What were sales for the Northeast branch this month?")
 print(str(answer))</code></pre>
+                      </div>
                     </div>
                   </div>
                 </div>
+
               </div>
 
-            </div>
-
-            <!-- Desktop code snippet display -->
-            <div class="snippet-desktop" id="snippet-desktop">
-              <div class="code-block" id="desktop-code-block">
-                <button class="code-copy-btn" onclick="copyCodeBlock(this)" aria-label="Copy code">
-                  <svg class="icon-copy" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2">
-                    <rect x="10" y="10" width="14" height="14" rx="1"/>
-                    <path d="M22 10V8a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h2"/>
-                  </svg>
-                  <svg class="icon-check" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M8 16l6 6 10-12"/>
-                  </svg>
-                </button>
-                <pre><code class="language-python" id="desktop-code">import mellea
+              <!-- Desktop code snippet display -->
+              <div class="snippet-desktop" id="snippet-desktop">
+                <div class="code-block" id="desktop-code-block">
+                  <button class="code-copy-btn" onclick="copyCodeBlock(this)" aria-label="Copy code">
+                    <svg class="icon-copy" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2">
+                      <rect x="10" y="10" width="14" height="14" rx="1" />
+                      <path d="M22 10V8a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h2" />
+                    </svg>
+                    <svg class="icon-check" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M8 16l6 6 10-12" />
+                    </svg>
+                  </button>
+                  <pre><code class="language-python" id="desktop-code">import mellea
 from mellea.stdlib.sampling import RejectionSamplingStrategy
 
 
@@ -1432,46 +1594,47 @@ def write_email_with_strategy(m: mellea.MelleaSession, name: str, notes: str) ->
     # If sampling fails, use the first generation
     print("Expect sub-par result.")
     return email_candidate.sample_generations[0].value</code></pre>
+                </div>
               </div>
-            </div>
 
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+     FOOTER
+     ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="grid">
+        <div class="content-area">
+          <div class="footer-content">
+            <span>Apache-2.0 License &middot; Copyright &copy; 2026 Mellea</span>
+            <ul class="footer-links">
+              <li><a href="https://github.com/generative-computing/mellea" target="_blank" rel="noreferrer">GitHub</a>
+              </li>
+              <li><a href="https://docs.mellea.ai" target="_blank" rel="noreferrer">Docs</a></li>
+              <li><a href="https://generative-computing.github.io/blog/" target="_blank" rel="noreferrer">Blog</a></li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </footer>
 
-</main>
-
-<!-- ==========================================================================
-     FOOTER
-     ========================================================================== -->
-<footer class="footer">
-  <div class="container">
-    <div class="grid">
-      <div class="content-area">
-        <div class="footer-content">
-          <span>Apache-2.0 License &middot; Copyright &copy; 2026 Mellea</span>
-          <ul class="footer-links">
-            <li><a href="https://github.com/generative-computing/mellea" target="_blank" rel="noreferrer">GitHub</a></li>
-            <li><a href="https://docs.mellea.ai" target="_blank" rel="noreferrer">Docs</a></li>
-            <li><a href="https://generative-computing.github.io/blog/" target="_blank" rel="noreferrer">Blog</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
-
-<!-- ==========================================================================
+  <!-- ==========================================================================
      JAVASCRIPT
      ========================================================================== -->
-<script>
-  // ==========================================================================
-  // CODE SNIPPETS DATA - Edit these to change code examples
-  // ==========================================================================
-  const CODE_SNIPPETS = {
-    'instruct-validate-repair': `import mellea
+  <script>
+    // ==========================================================================
+    // CODE SNIPPETS DATA - Edit these to change code examples
+    // ==========================================================================
+    const CODE_SNIPPETS = {
+      'instruct-validate-repair': `import mellea
 from mellea.stdlib.sampling import RejectionSamplingStrategy
 
 
@@ -1493,7 +1656,7 @@ def write_email_with_strategy(m: mellea.MelleaSession, name: str, notes: str) ->
     print("Expect sub-par result.")
     return email_candidate.sample_generations[0].value`,
 
-    'generative-slots': `@mellea.generative
+      'generative-slots': `@mellea.generative
 def classify_sentiment(text: str) -> Literal["positive", "negative"]:
   """Classify the sentiment of the input text as 'positive' or 'negative'."""
 
@@ -1509,7 +1672,7 @@ else:
 
 post_response(msg)`,
 
-    'mobjects': `import mellea
+      'mobjects': `import mellea
 from mellea.stdlib.mify import mify, MifiedProtocol
 import pandas
 from io import StringIO
@@ -1538,301 +1701,302 @@ db = MyCompanyDatabase()
 assert isinstance(db, MifiedProtocol)
 answer = m.query(db, "What were sales for the Northeast branch this month?")
 print(str(answer))`
-  };
+    };
 
-  // ==========================================================================
-  // COPY TO CLIPBOARD
-  // ==========================================================================
-  function copyToClipboard(button, text) {
-    navigator.clipboard.writeText(text).then(() => {
-      button.classList.add('copied');
-      const span = button.querySelector('span');
-      const originalText = span.textContent;
-      span.textContent = 'Copied!';
-
-      setTimeout(() => {
-        button.classList.remove('copied');
-        span.textContent = originalText;
-      }, 2000);
-    });
-  }
-
-  // Copy code block content
-  function copyCodeBlock(button) {
-    const codeBlock = button.closest('.code-block');
-    const code = codeBlock.querySelector('code');
-    const text = code.textContent;
-
-    navigator.clipboard.writeText(text).then(() => {
-      button.classList.add('copied');
-
-      setTimeout(() => {
-        button.classList.remove('copied');
-      }, 2000);
-    });
-  }
-
-  // ==========================================================================
-  // COMPARISON SLIDER
-  // ==========================================================================
-  (function initComparisonSlider() {
-    const slider = document.getElementById('comparison-slider');
-    const handle = document.getElementById('comparison-handle');
-    const afterImage = slider.querySelector('.after-image');
-
-    let isDragging = false;
-    let position = 50; // Initial position (%)
-
-    function updatePosition(clientX) {
-      const rect = slider.getBoundingClientRect();
-      let newPosition = ((clientX - rect.left) / rect.width) * 100;
-      newPosition = Math.max(0, Math.min(100, newPosition));
-      position = newPosition;
-
-      afterImage.style.clipPath = `inset(0 0 0 ${position}%)`;
-      handle.style.left = `${position}%`;
-    }
-
-    handle.addEventListener('mousedown', (e) => {
-      isDragging = true;
-      e.preventDefault();
-    });
-
-    handle.addEventListener('touchstart', (e) => {
-      isDragging = true;
-    }, { passive: true });
-
-    document.addEventListener('mousemove', (e) => {
-      if (isDragging) {
-        updatePosition(e.clientX);
-      }
-    });
-
-    document.addEventListener('touchmove', (e) => {
-      if (isDragging && e.touches[0]) {
-        updatePosition(e.touches[0].clientX);
-      }
-    }, { passive: true });
-
-    document.addEventListener('mouseup', () => {
-      isDragging = false;
-    });
-
-    document.addEventListener('touchend', () => {
-      isDragging = false;
-    });
-
-    // Click anywhere on slider to move handle
-    slider.addEventListener('click', (e) => {
-      if (e.target !== handle) {
-        updatePosition(e.clientX);
-      }
-    });
-  })();
-
-  // ==========================================================================
-  // ACCORDION
-  // ==========================================================================
-  (function initAccordion() {
-    const accordion = document.getElementById('accordion');
-    const items = accordion.querySelectorAll('.accordion-item');
-    const desktopSnippet = document.getElementById('snippet-desktop');
-    const desktopCode = document.getElementById('desktop-code');
-
-    items.forEach(item => {
-      const header = item.querySelector('.accordion-header');
-
-      header.addEventListener('click', () => {
-        // Don't do anything if already active
-        if (item.classList.contains('active')) return;
-
-        // Fade out
-        desktopSnippet.classList.add('transitioning');
+    // ==========================================================================
+    // COPY TO CLIPBOARD
+    // ==========================================================================
+    function copyToClipboard(button, text) {
+      navigator.clipboard.writeText(text).then(() => {
+        button.classList.add('copied');
+        const span = button.querySelector('span');
+        const originalText = span.textContent;
+        span.textContent = 'Copied!';
 
         setTimeout(() => {
-          // Remove active from all items
-          items.forEach(i => i.classList.remove('active'));
-
-          // Add active to clicked item
-          item.classList.add('active');
-
-          // Update desktop code - use hljs.highlight() for proper re-highlighting
-          const snippetKey = item.dataset.snippet;
-          const highlighted = hljs.highlight(CODE_SNIPPETS[snippetKey], { language: 'python' });
-          desktopCode.innerHTML = highlighted.value;
-          desktopCode.className = 'language-python hljs';
-
-          // Fade in
-          setTimeout(() => {
-            desktopSnippet.classList.remove('transitioning');
-          }, 50);
-        }, 150);
+          button.classList.remove('copied');
+          span.textContent = originalText;
+        }, 2000);
       });
-    });
-  })();
+    }
 
-  // ==========================================================================
-  // INITIALIZE SYNTAX HIGHLIGHTING
-  // ==========================================================================
-  document.addEventListener('DOMContentLoaded', () => {
-    hljs.highlightAll();
-  });
+    // Copy code block content
+    function copyCodeBlock(button) {
+      const codeBlock = button.closest('.code-block');
+      const code = codeBlock.querySelector('code');
+      const text = code.textContent;
 
-  // ==========================================================================
-  // FETCH GITHUB STARS, PYPI VERSION & PROJECT PULSE
-  // ==========================================================================
-  (function fetchProjectMeta() {
-    const REPO = 'generative-computing/mellea';
-    const pulse = document.getElementById('project-pulse');
+      navigator.clipboard.writeText(text).then(() => {
+        button.classList.add('copied');
 
-    function timeAgo(dateStr) {
-      const seconds = Math.floor((Date.now() - new Date(dateStr).getTime()) / 1000);
-      const intervals = [
-        [31536000, 'year'], [2592000, 'month'], [604800, 'week'],
-        [86400, 'day'], [3600, 'hour'], [60, 'minute']
-      ];
-      for (const [secs, label] of intervals) {
-        const count = Math.floor(seconds / secs);
-        if (count >= 1) return count === 1 ? `1 ${label} ago` : `${count} ${label}s ago`;
+        setTimeout(() => {
+          button.classList.remove('copied');
+        }, 2000);
+      });
+    }
+
+    // ==========================================================================
+    // COMPARISON SLIDER
+    // ==========================================================================
+    (function initComparisonSlider() {
+      const slider = document.getElementById('comparison-slider');
+      const handle = document.getElementById('comparison-handle');
+      const afterImage = slider.querySelector('.after-image');
+
+      let isDragging = false;
+      let position = 50; // Initial position (%)
+
+      function updatePosition(clientX) {
+        const rect = slider.getBoundingClientRect();
+        let newPosition = ((clientX - rect.left) / rect.width) * 100;
+        newPosition = Math.max(0, Math.min(100, newPosition));
+        position = newPosition;
+
+        afterImage.style.clipPath = `inset(0 0 0 ${position}%)`;
+        handle.style.left = `${position}%`;
       }
-      return 'just now';
-    }
 
-    function showPulseItem(id, text) {
-      const el = document.getElementById(id);
-      el.textContent = text;
-      el.classList.add('loaded');
-    }
+      handle.addEventListener('mousedown', (e) => {
+        isDragging = true;
+        e.preventDefault();
+      });
 
-    function updateSeparators() {
-      const items = pulse.querySelectorAll('.pulse-item.loaded');
-      pulse.querySelectorAll('.pulse-sep').forEach(s => s.style.display = 'none');
-      if (items.length >= 2) document.getElementById('pulse-sep-1').style.display = 'inline';
-      if (items.length >= 3) document.getElementById('pulse-sep-2').style.display = 'inline';
-      if (items.length > 0) pulse.classList.add('loaded');
-    }
+      handle.addEventListener('touchstart', (e) => {
+        isDragging = true;
+      }, { passive: true });
 
-    // Stars
-    fetch(`https://api.github.com/repos/${REPO}`)
-      .then(r => r.json())
-      .then(data => {
-        if (data.stargazers_count != null) {
-          const el = document.getElementById('github-stars');
-          const count = data.stargazers_count;
-          el.textContent = count >= 1000 ? (count / 1000).toFixed(1).replace(/\.0$/, '') + 'k' : count;
-          el.classList.add('loaded');
+      document.addEventListener('mousemove', (e) => {
+        if (isDragging) {
+          updatePosition(e.clientX);
         }
-      })
-      .catch(() => {});
+      });
 
-    // PyPI version
-    fetch('https://pypi.org/pypi/mellea/json')
-      .then(r => r.json())
-      .then(data => {
-        if (data.info && data.info.version) {
-          const el = document.getElementById('pypi-version');
-          el.textContent = 'v' + data.info.version;
-          el.classList.add('loaded');
+      document.addEventListener('touchmove', (e) => {
+        if (isDragging && e.touches[0]) {
+          updatePosition(e.touches[0].clientX);
         }
-      })
-      .catch(() => {});
+      }, { passive: true });
 
-    // Latest release + date
-    fetch(`https://api.github.com/repos/${REPO}/releases/latest`)
-      .then(r => r.json())
-      .then(data => {
-        if (data.tag_name && data.published_at) {
-          showPulseItem('pulse-release', `${data.tag_name} released ${timeAgo(data.published_at)}`);
-          updateSeparators();
+      document.addEventListener('mouseup', () => {
+        isDragging = false;
+      });
+
+      document.addEventListener('touchend', () => {
+        isDragging = false;
+      });
+
+      // Click anywhere on slider to move handle
+      slider.addEventListener('click', (e) => {
+        if (e.target !== handle) {
+          updatePosition(e.clientX);
         }
-      })
-      .catch(() => {});
+      });
+    })();
 
-    // Last commit
-    fetch(`https://api.github.com/repos/${REPO}/commits?per_page=1`)
-      .then(r => r.json())
-      .then(data => {
-        if (Array.isArray(data) && data[0]?.commit?.committer?.date) {
-          showPulseItem('pulse-commit', `last commit ${timeAgo(data[0].commit.committer.date)}`);
-          updateSeparators();
+    // ==========================================================================
+    // ACCORDION
+    // ==========================================================================
+    (function initAccordion() {
+      const accordion = document.getElementById('accordion');
+      const items = accordion.querySelectorAll('.accordion-item');
+      const desktopSnippet = document.getElementById('snippet-desktop');
+      const desktopCode = document.getElementById('desktop-code');
+
+      items.forEach(item => {
+        const header = item.querySelector('.accordion-header');
+
+        header.addEventListener('click', () => {
+          // Don't do anything if already active
+          if (item.classList.contains('active')) return;
+
+          // Fade out
+          desktopSnippet.classList.add('transitioning');
+
+          setTimeout(() => {
+            // Remove active from all items
+            items.forEach(i => i.classList.remove('active'));
+
+            // Add active to clicked item
+            item.classList.add('active');
+
+            // Update desktop code - use hljs.highlight() for proper re-highlighting
+            const snippetKey = item.dataset.snippet;
+            const highlighted = hljs.highlight(CODE_SNIPPETS[snippetKey], { language: 'python' });
+            desktopCode.innerHTML = highlighted.value;
+            desktopCode.className = 'language-python hljs';
+
+            // Fade in
+            setTimeout(() => {
+              desktopSnippet.classList.remove('transitioning');
+            }, 50);
+          }, 150);
+        });
+      });
+    })();
+
+    // ==========================================================================
+    // INITIALIZE SYNTAX HIGHLIGHTING
+    // ==========================================================================
+    document.addEventListener('DOMContentLoaded', () => {
+      hljs.highlightAll();
+    });
+
+    // ==========================================================================
+    // FETCH GITHUB STARS, PYPI VERSION & PROJECT PULSE
+    // ==========================================================================
+    (function fetchProjectMeta() {
+      const REPO = 'generative-computing/mellea';
+      const pulse = document.getElementById('project-pulse');
+
+      function timeAgo(dateStr) {
+        const seconds = Math.floor((Date.now() - new Date(dateStr).getTime()) / 1000);
+        const intervals = [
+          [31536000, 'year'], [2592000, 'month'], [604800, 'week'],
+          [86400, 'day'], [3600, 'hour'], [60, 'minute']
+        ];
+        for (const [secs, label] of intervals) {
+          const count = Math.floor(seconds / secs);
+          if (count >= 1) return count === 1 ? `1 ${label} ago` : `${count} ${label}s ago`;
         }
-      })
-      .catch(() => {});
+        return 'just now';
+      }
 
-    // Contributors count + avatars
-    fetch(`https://api.github.com/repos/${REPO}/contributors?per_page=100&anon=true`)
-      .then(r => r.json())
-      .then(data => {
-        if (Array.isArray(data) && data.length > 0) {
-          showPulseItem('pulse-contributors', `${data.length} contributors`);
-          updateSeparators();
+      function showPulseItem(id, text) {
+        const el = document.getElementById(id);
+        el.textContent = text;
+        el.classList.add('loaded');
+      }
 
-          // Render top contributor avatars
-          const container = document.getElementById('contributor-avatars');
-          const maxAvatars = 12;
-          const named = data.filter(c => c.login && c.avatar_url);
-          const shown = named.slice(0, maxAvatars);
-          const remaining = data.length - shown.length;
+      function updateSeparators() {
+        const items = pulse.querySelectorAll('.pulse-item.loaded');
+        pulse.querySelectorAll('.pulse-sep').forEach(s => s.style.display = 'none');
+        if (items.length >= 2) document.getElementById('pulse-sep-1').style.display = 'inline';
+        if (items.length >= 3) document.getElementById('pulse-sep-2').style.display = 'inline';
+        if (items.length > 0) pulse.classList.add('loaded');
+      }
 
-          shown.forEach(c => {
-            const a = document.createElement('a');
-            a.href = c.html_url;
-            a.target = '_blank';
-            a.rel = 'noreferrer';
-            a.title = c.login;
-            const img = document.createElement('img');
-            img.src = c.avatar_url + '&s=64';
-            img.alt = c.login;
-            img.loading = 'lazy';
-            a.appendChild(img);
-            container.appendChild(a);
+      // Stars
+      fetch(`https://api.github.com/repos/${REPO}`)
+        .then(r => r.json())
+        .then(data => {
+          if (data.stargazers_count != null) {
+            const el = document.getElementById('github-stars');
+            const count = data.stargazers_count;
+            el.textContent = count >= 1000 ? (count / 1000).toFixed(1).replace(/\.0$/, '') + 'k' : count;
+            el.classList.add('loaded');
+          }
+        })
+        .catch(() => { });
+
+      // PyPI version
+      fetch('https://pypi.org/pypi/mellea/json')
+        .then(r => r.json())
+        .then(data => {
+          if (data.info && data.info.version) {
+            const el = document.getElementById('pypi-version');
+            el.textContent = 'v' + data.info.version;
+            el.classList.add('loaded');
+          }
+        })
+        .catch(() => { });
+
+      // Latest release + date
+      fetch(`https://api.github.com/repos/${REPO}/releases/latest`)
+        .then(r => r.json())
+        .then(data => {
+          if (data.tag_name && data.published_at) {
+            showPulseItem('pulse-release', `${data.tag_name} released ${timeAgo(data.published_at)}`);
+            updateSeparators();
+          }
+        })
+        .catch(() => { });
+
+      // Last commit
+      fetch(`https://api.github.com/repos/${REPO}/commits?per_page=1`)
+        .then(r => r.json())
+        .then(data => {
+          if (Array.isArray(data) && data[0]?.commit?.committer?.date) {
+            showPulseItem('pulse-commit', `last commit ${timeAgo(data[0].commit.committer.date)}`);
+            updateSeparators();
+          }
+        })
+        .catch(() => { });
+
+      // Contributors count + avatars
+      fetch(`https://api.github.com/repos/${REPO}/contributors?per_page=100&anon=true`)
+        .then(r => r.json())
+        .then(data => {
+          if (Array.isArray(data) && data.length > 0) {
+            showPulseItem('pulse-contributors', `${data.length} contributors`);
+            updateSeparators();
+
+            // Render top contributor avatars
+            const container = document.getElementById('contributor-avatars');
+            const maxAvatars = 12;
+            const named = data.filter(c => c.login && c.avatar_url);
+            const shown = named.slice(0, maxAvatars);
+            const remaining = data.length - shown.length;
+
+            shown.forEach(c => {
+              const a = document.createElement('a');
+              a.href = c.html_url;
+              a.target = '_blank';
+              a.rel = 'noreferrer';
+              a.title = c.login;
+              const img = document.createElement('img');
+              img.src = c.avatar_url + '&s=64';
+              img.alt = c.login;
+              img.loading = 'lazy';
+              a.appendChild(img);
+              container.appendChild(a);
+            });
+
+            if (remaining > 0) {
+              const more = document.createElement('span');
+              more.className = 'avatar-more';
+              more.textContent = '+' + remaining;
+              container.appendChild(more);
+            }
+
+            container.classList.add('loaded');
+          }
+        })
+        .catch(() => { });
+
+      // Commit activity sparkline (last 12 weeks)
+      fetch(`https://api.github.com/repos/${REPO}/stats/commit_activity`)
+        .then(r => {
+          if (r.status === 202) return null; // GitHub is computing, skip gracefully
+          return r.json();
+        })
+        .then(data => {
+          if (!Array.isArray(data) || data.length === 0) return;
+
+          const container = document.getElementById('activity-sparkline');
+          const weeks = data.slice(-12);
+          const max = Math.max(...weeks.map(w => w.total), 1);
+
+          weeks.forEach(week => {
+            const bar = document.createElement('span');
+            bar.className = 'spark-bar';
+            const height = Math.max(2, (week.total / max) * 24);
+            bar.style.height = height + 'px';
+            if (week.total > 0) bar.style.opacity = '1';
+            container.appendChild(bar);
           });
 
-          if (remaining > 0) {
-            const more = document.createElement('span');
-            more.className = 'avatar-more';
-            more.textContent = '+' + remaining;
-            container.appendChild(more);
-          }
+          const total = weeks.reduce((sum, w) => sum + w.total, 0);
+          const label = document.createElement('span');
+          label.className = 'spark-label';
+          label.textContent = `${total} commits / 12 weeks`;
+          container.appendChild(label);
 
           container.classList.add('loaded');
-        }
-      })
-      .catch(() => {});
-
-    // Commit activity sparkline (last 12 weeks)
-    fetch(`https://api.github.com/repos/${REPO}/stats/commit_activity`)
-      .then(r => {
-        if (r.status === 202) return null; // GitHub is computing, skip gracefully
-        return r.json();
-      })
-      .then(data => {
-        if (!Array.isArray(data) || data.length === 0) return;
-
-        const container = document.getElementById('activity-sparkline');
-        const weeks = data.slice(-12);
-        const max = Math.max(...weeks.map(w => w.total), 1);
-
-        weeks.forEach(week => {
-          const bar = document.createElement('span');
-          bar.className = 'spark-bar';
-          const height = Math.max(2, (week.total / max) * 24);
-          bar.style.height = height + 'px';
-          if (week.total > 0) bar.style.opacity = '1';
-          container.appendChild(bar);
-        });
-
-        const total = weeks.reduce((sum, w) => sum + w.total, 0);
-        const label = document.createElement('span');
-        label.className = 'spark-label';
-        label.textContent = `${total} commits / 12 weeks`;
-        container.appendChild(label);
-
-        container.classList.add('loaded');
-      })
-      .catch(() => {});
-  })();
-</script>
+        })
+        .catch(() => { });
+    })();
+  </script>
 
 </body>
+
 </html>

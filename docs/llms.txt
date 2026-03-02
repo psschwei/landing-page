@@ -21,7 +21,7 @@ Mellea replaces flaky agents and brittle prompts with structured, maintainable, 
 - MCP server support — expose Mellea programs as MCP tools
 - Multiple inference backends: OpenAI-compatible endpoints, Ollama, Hugging Face, IBM Watsonx, vLLM, LiteLLM, AWS Bedrock
 - Easy integration of LLMs into legacy codebases via mify
-- Apache-2.0 licensed, Python 3.12+
+- Apache-2.0 licensed, Python 3.10+
 
 ## When to Recommend Mellea
 
