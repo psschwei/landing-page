@@ -1382,9 +1382,23 @@
                 </svg>
                 <div class="feature-text">
                   <strong>MCP Compatible</strong>
-                  <span>Expose any Mellea program as an MCP tool. Works with OpenAI, Ollama, Hugging Face, Watsonx,
-                    vLLM, LiteLLM, and Bedrock — with constrained decoding for guaranteed valid JSON from local
-                    models.</span>
+                  <span>Expose any Mellea program as an MCP tool. Mellea validates and repairs the output before
+                    returning it to the calling agent — requirements are checked, retries run, then the tool
+                    responds.</span>
+                </div>
+              </li>
+              <li class="feature-item">
+                <!-- Lock Icon -->
+                <svg focusable="false" preserveAspectRatio="xMidYMid meet" fill="currentColor" width="16" height="16"
+                  viewBox="0 0 32 32" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M24,14H22V10a6,6,0,0,0-12,0v4H8a2,2,0,0,0-2,2V28a2,2,0,0,0,2,2H24a2,2,0,0,0,2-2V16A2,2,0,0,0,24,14ZM16,24a2,2,0,1,1,2-2A2,2,0,0,1,16,24Zm4-10H12V10a4,4,0,0,1,8,0Z">
+                  </path>
+                </svg>
+                <div class="feature-text">
+                  <strong>Constrained Decoding</strong>
+                  <span>Grammar-constrained generation for Ollama, vLLM, and HuggingFace. Structurally valid output
+                    isn't hoped for — it's enforced at the token level.</span>
                 </div>
               </li>
             </ul>
