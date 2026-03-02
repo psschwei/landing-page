@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mellea - A Python Library for Generative Programs</title>
   <meta name="description"
-    content="Mellea is an open-source Python library for writing generative programs. Replace flaky agents and brittle prompts with structured, maintainable, and resilient AI workflows.">
+    content="Mellea is an open-source Python library for structured, validated LLM output. Works with Ollama, vLLM, and OpenAI — drop it inside LangGraph, AutoGen, or any Python system. A predictable alternative to LangChain output parsers.">
   <meta name="theme-color" content="#161616">
   <link rel="canonical" href="https://mellea.ai/">
   <link rel="icon" href="mellea-logo.svg">
@@ -17,7 +17,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://mellea.ai/">
   <meta property="og:description"
-    content="An open-source Python library for writing generative programs. Replace flaky agents and brittle prompts with structured, maintainable, and resilient AI workflows.">
+    content="Mellea is an open-source Python library for structured, validated LLM output. Works with Ollama, vLLM, and OpenAI — drop it inside LangGraph, AutoGen, or any Python system. A predictable alternative to LangChain output parsers.">
   <meta property="og:site_name" content="Mellea">
   <meta property="og:image"
     content="https://raw.githubusercontent.com/generative-computing/docs/main/images/hero-dark.png">
@@ -30,7 +30,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Mellea - A Python Library for Generative Programs">
   <meta name="twitter:description"
-    content="An open-source Python library for writing generative programs. Replace flaky agents and brittle prompts with structured, maintainable, and resilient AI workflows.">
+    content="Mellea is an open-source Python library for structured, validated LLM output. Works with Ollama, vLLM, and OpenAI — drop it inside LangGraph, AutoGen, or any Python system. A predictable alternative to LangChain output parsers.">
   <meta name="twitter:image"
     content="https://raw.githubusercontent.com/generative-computing/docs/main/images/hero-dark.png">
   <meta name="twitter:image:alt" content="Mellea logo on dark green background">
@@ -47,7 +47,7 @@
     "runtimePlatform": "Python 3.10+",
     "license": "https://spdx.org/licenses/Apache-2.0",
     "url": "https://mellea.ai/",
-    "keywords": ["generative-ai", "llm", "agents", "prompt-engineering", "structured-output", "python", "mcp", "inference-scaling", "generative-computing"],
+    "keywords": ["generative-ai", "llm", "agents", "prompt-engineering", "structured-output", "python", "mcp", "inference-scaling", "generative-computing", "ollama", "vllm", "local-llm", "constrained-decoding", "langgraph", "langchain-alternative", "pydantic-llm-output"],
     "applicationCategory": "DeveloperApplication",
     "author": {
       "@type": "Organization",
@@ -1184,7 +1184,7 @@
     <div class="container">
       <div class="header-content">
         <div class="header-left">
-          <a href="#" class="logo">Mellea</a>
+          <a href="/" class="logo">Mellea</a>
           <nav class="nav" id="main-nav">
             <a href="https://generative-computing.github.io/blog/" target="_blank" rel="noreferrer">
               Blog
@@ -1207,6 +1207,14 @@
           </button>
         </div>
         <ul class="social-links">
+          <li>
+            <a href="https://ibm.biz/mellea-discord" target="_blank" rel="noreferrer">
+              <span>Discord</span>
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20.317 4.492c-1.53-.69-3.17-1.2-4.885-1.49a.075.075 0 0 0-.079.036c-.21.369-.444.85-.608 1.23a18.566 18.566 0 0 0-5.487 0 12.36 12.36 0 0 0-.617-1.23A.077.077 0 0 0 8.562 3c-1.714.29-3.354.8-4.885 1.491a.07.07 0 0 0-.032.027C.533 9.093-.32 13.555.099 17.961a.08.08 0 0 0 .031.055 20.03 20.03 0 0 0 5.993 2.98.078.078 0 0 0 .084-.026c.462-.62.874-1.275 1.226-1.963.021-.04.001-.088-.041-.104a13.201 13.201 0 0 1-1.872-.878.075.075 0 0 1-.008-.125c.126-.093.252-.19.372-.287a.075.075 0 0 1 .078-.01c3.927 1.764 8.18 1.764 12.061 0a.075.075 0 0 1 .079.009c.12.098.245.195.372.288a.075.075 0 0 1-.006.125c-.598.344-1.22.635-1.873.877a.075.075 0 0 0-.041.105c.36.687.772 1.341 1.225 1.962a.077.077 0 0 0 .084.028 19.963 19.963 0 0 0 6.002-2.981.076.076 0 0 0 .032-.054c.5-5.094-.838-9.52-3.549-13.442a.06.06 0 0 0-.031-.03zM8.02 15.278c-1.182 0-2.157-1.069-2.157-2.38 0-1.312.956-2.38 2.157-2.38 1.21 0 2.176 1.077 2.157 2.38 0 1.312-.956 2.38-2.157 2.38zm7.975 0c-1.183 0-2.157-1.069-2.157-2.38 0-1.312.955-2.38 2.157-2.38 1.21 0 2.176 1.077 2.157 2.38 0 1.312-.946 2.38-2.157 2.38z" />
+              </svg>
+            </a>
+          </li>
           <li>
             <a href="https://github.com/generative-computing/mellea" target="_blank" rel="noreferrer">
               <span>GitHub</span>
@@ -1236,11 +1244,12 @@
                 <span class="app-name">Mellea</span>
                 <img src="mellea-logo.svg" alt="" class="hero-logo" aria-hidden="true">
                 <br>
-                <span>build reliable AI with Python</span>
+                <span>predictable AI, real Python</span>
               </h1>
-              <p class="hero-subtext">LLM apps built on raw prompts break silently, resist testing, and can't be
-                composed. Frameworks add complexity without reliability. Mellea gives you programming abstractions that
-                make generative AI predictable — no chains, no graphs, just Python.</p>
+              <p class="hero-subtext">In every AI system — LangGraph, AutoGen, or your own Python — the unreliable
+                part is the LLM call itself. Silent failures, untestable outputs, no guarantees. Mellea gives those
+                calls programming abstractions that make generative AI predictable: type annotations, validated outputs,
+                testable behavior.</p>
               <div class="hero-actions">
                 <button class="copy-snippet" onclick="copyToClipboard(this, 'uv pip install mellea')">
                   <span>uv pip install mellea</span> <span class="version-tag" id="pypi-version"></span>
@@ -1510,7 +1519,7 @@ def write_email_with_strategy(m: mellea.MelleaSession, name: str, notes: str) ->
                     </svg>
                   </button>
                   <div class="accordion-content">
-                    <p class="accordion-description">Seamlessly sprinkle GenAI into existing systems.</p>
+                    <p class="accordion-description">Add LLM query capabilities to any existing Python class with a single decorator. No rewrites, no wrappers.</p>
                     <a href="https://docs.mellea.ai/core-concept/mobjects" target="_blank" rel="noreferrer"
                       class="learn-more">
                       Learn more
@@ -1616,6 +1625,7 @@ post_response(msg)</code></pre>
             <ul class="footer-links">
               <li><a href="https://github.com/generative-computing/mellea" target="_blank" rel="noreferrer">GitHub</a>
               </li>
+              <li><a href="https://ibm.biz/mellea-discord" target="_blank" rel="noreferrer">Discord</a></li>
               <li><a href="https://docs.mellea.ai" target="_blank" rel="noreferrer">Docs</a></li>
               <li><a href="https://generative-computing.github.io/blog/" target="_blank" rel="noreferrer">Blog</a></li>
               <li><a href="https://thenewstack.io/ibms-mellea-tackles-open-source-ais-hidden-weakness/" target="_blank"
